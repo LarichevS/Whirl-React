@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.btn{
+  font-family: Inter;
+  
+  letter-spacing: 0.2px;
+  
+
+  border: none; 
+  outline: none;   
+  cursor: pointer
+}
+
+ .button--blue {   /*бывш btn*/
+  text-align: center;
+  line-height: 40px; 
+  
+  padding: 0 30px; 
+  width: auto; 
+  height: 40px;
+  
+
+  background-color: #0070A0;
+  color: #FFFFFF;
+
+  transition: opacity 0.7s;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.button--blue{/*бывш btn*/
+  opacity: 0.8;
+}
+
+.button--transparent-opacity{ /*бывш button_reg*/
+  color: #0070A0;
+  font-size: 15px;
+  transition: opacity 0.5s;
+}
+
+.button--transparent-opacity:hover {/*бывш button_reg*/
+  opacity: 0.5;
+}
+
+ .button--icon {/* бывш button__learn */
+  color: #0070A0;
+  font-size: 17px;
+  display: flex;
+  gap:5px;
+  background-color: transparent;
+}
+
+.button--transparent { /*бывш see all post */
+  padding: 0 30px;  
+  height: 40px;
+
+  background-color: transparent;
+  color: #0070A0;
+ 
+  font-size: 17px;
+}
+
