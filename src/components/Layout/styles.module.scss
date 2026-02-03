@@ -1,0 +1,680 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #33383F;
+}
+
+ul {
+  list-style: none;
+
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.welcome--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.welcome__title {
+  font-family: Fraunces;
+  font-weight: 500;
+  font-size: 58px;
+  letter-spacing: 2.2px;
+  color: #1F1F1F;
+  margin: 0;
+}
+
+.welcome__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: #1F1F1F;
+  margin: 30px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.welcome__img {
+  width: auto;
+  height: auto;
+}
+
+.welcome__actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.trust__companies {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding: 30px;
+}
+
+.welcome__companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+  padding: 10px 20px;
+}
+
+
+
+/* Карты с инфромацией  */
+
+.info--cards {
+  padding: 110px 0;
+}
+
+.info--cards__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info--cards__lightning {
+  width: 355px;
+  height: 250px;
+  background-color: #FAEA73;
+}
+
+.info--cards__dollar {
+  width: 355px;
+  height: 250px;
+  background-color: #CCEFF6;
+}
+
+.info--cards__hand {
+  width: 355px;
+  height: 250px;
+  background-color: #F7CEDC;
+}
+
+.info--card__img {
+  margin: 30px 0 0 30px;
+  width: 55px;
+  height: 55px;
+}
+
+.info--cards__title {
+  font-family: Fraunces;
+  font-size: 25px;
+  letter-spacing: 0.2px;
+  padding: 0 30px;
+  margin-top: 5px;
+}
+
+.info--cards__desc {
+  font-family: Inter;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  padding: 15px 30px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+/* информация компании */
+
+
+
+.company--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.company--info {
+  background-color: #F7F9FA;
+  width: 100%;
+}
+
+.title--linelist {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 90px;
+}
+
+.company--info__title {
+  font-family: Fraunces;
+  letter-spacing: 0.2px;
+  margin: 0;
+  line-height: 40px;
+}
+
+.company--info__title--big {
+  font-size: 42px;
+}
+
+.company--info__title--small {
+  font-size: 39px;
+}
+
+
+.line-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Fraunces;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  width: 485px;
+  color: #626A72;
+}
+
+.line-list li {
+  border-bottom: 1px solid #C2CDD8;
+  padding: 12px 0;
+}
+
+.line-list li:first-child {
+  border-top: 1px solid #C2CDD8;
+}
+
+.item__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.line--list__arrow {
+  margin-left: auto;
+}
+
+.item__text {
+  font-size: 20px;
+  color: #1F1F1F;
+  line-height: 24px;
+  margin-top: 10px;
+  padding-left: 45px;
+  padding: 2px 60px 10px 39px;
+
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.item--active .item__text {
+  display: block;
+  opacity: 1;
+}
+
+/* это на будущее для стрелочки */
+.line--list__arrow {
+  transition: transform 0.3s ease;
+}
+
+.item--active .line--list__arrow {
+  transform: rotate(180deg);
+}
+
+.line-list li:not(.item--active) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company--info__img {
+  min-width: 480px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.img__PC--right {
+  padding: 135px 30px 0 0;
+}
+
+
+
+/* about company */
+
+
+
+.title--about__company {
+  color: #1F1F1F;
+  font-family: Fraunces;
+  font-size: 41px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.about--company__cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  flex-wrap: wrap;
+}
+
+.about--card__non,
+.about--card__loupe,
+.about--card__pc {
+  max-width: 235px;
+  width: 100%;
+  height: auto;
+}
+
+.about--card__non::before {
+  content: "";
+  display: block;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.title--card {
+  margin: 0;
+  font-family: Fraunces;
+  font-size: 25px;
+  letter-spacing: 0.2px;
+  color: #1F1F1F;
+}
+
+.desc--card {
+  padding: 15px 0 0 0;
+  font-family: Inter;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+  color: #1F1F1F;
+  line-height: 24px;
+}
+
+
+
+/* Отслеживание  */
+
+
+
+.tracking {
+  background-color: #0070A0;
+  width: 100%;
+}
+
+.tracking--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 550px;
+}
+
+.title__tracking--img {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+}
+
+.tracking__title {
+  font-family: Fraunces;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50.4px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  margin: 0;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.tracking__decs {
+  font-family: Inter;
+  font-weight: 250;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.tracking__list {
+  font-weight: 250;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title__tracking--mark {
+  width: 17px;
+  height: 17px;
+}
+
+.tracking__list--text {
+  font-family: Inter;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+
+  color: #FFFFFF;
+}
+
+.title__list--right {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+
+/* task automated */
+
+.tasks--automation__wrapper {
+  padding: 130px 0;
+}
+
+.tasks--automation__title {
+  font-family: Fraunces;
+  font-size: 42px;
+  letter-spacing: 0.2px;
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+
+.tasks--automation__desc {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  padding: 20px 0 30px 0;
+
+  max-width: 640px;
+  width: 100%;
+  height: auto;
+}
+
+.tasks__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0 0 0;
+}
+
+.title__cards {
+  font-family: Fraunces;
+  font-size: 25px;
+  letter-spacing: 0.2px;
+  padding: 10px 0 15px 0;
+}
+
+.desc__cards {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  width: 235px;
+}
+
+.desc__cards--lightning {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.desc__cards--hand {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.tasks__card--hand {
+  padding: 10px 0 0 0;
+}
+
+.desc__cards,
+.desc__cards--lightning,
+.desc__cards--hand {
+  max-width: 240px;
+  width: 100%;
+}
+
+
+
+/* Blog */
+
+
+
+.blog {
+  background-color: #F7F9FA;
+  height: auto;
+  min-height: 750px;
+  width: 100%;
+}
+
+.blog--wrapper {
+  padding: 50px 0 0 0;
+}
+
+.title__all--post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 50px 0;
+}
+
+.blog__title {
+  font-family: Fraunces;
+  font-size: 42px;
+  letter-spacing: 0.2px;
+
+}
+
+.blog__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blog__cards--img {
+  width: 100%;
+  height: auto;
+
+}
+
+.blog__card--phone,
+.blog__card--laptop,
+.blog__card--hands {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__badgy {
+  align-self: flex-start;
+  color: #2C90C9;
+  font-family: Inter;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  padding: 6px 12px;
+  background-color: #E6F7FF;
+  margin: 10px 0 0 20px;
+}
+
+.title__card--phone,
+.title__card--laptop,
+.title__card--hands {
+  font-family: Fraunces;
+  font-size: 25px;
+  line-height: 31.25px;
+  letter-spacing: 0.2px;
+
+  max-width: 290px;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 20px;
+}
+
+.desc__card--phone,
+.desc__card--laptop,
+.desc__card--hands {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: 0.2px;
+
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding: 0 0 0 20px;
+}
+
+.blog__date--card {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 19.6px;
+  letter-spacing: 0.2px;
+  padding: 20px 20px;
+}
+
+
+
+/* started */
+
+
+
+.badgy__started {
+  display: flex;
+  gap: 25px;
+}
+
+.get--started {
+  background-color: #E6F7FF;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 80px;
+  padding: 70px 70px;
+  gap: 10px;
+}
+
+.title__started {
+  font-family: Fraunces;
+  font-size: 42px;
+  line-height: 50.4px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.desc__started {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  max-width: 500px;
+  height: auto;
+  padding: 15px 0 15px 0;
+}
+
+.budgy__desc {
+  font-family: Inter;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+  color: #626A72;
+}
+
+.started__badgy--free,
+.started__badgy--credit {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn{
+  font-family: Inter;
+  
+  letter-spacing: 0.2px;
+  
+
+  border: none; 
+  outline: none;   
+  cursor: pointer
+}
+
+.button--transparent { /*бывш see all post */
+  padding: 0 30px;  
+  height: 40px;
+
+  background-color: transparent;
+  color: #0070A0;
+ 
+  font-size: 17px;
+}
+
+ .button--icon {/* бывш button__learn */
+  color: #0070A0;
+  font-size: 17px;
+  display: flex;
+  gap:5px;
+  background-color: transparent;
+}
+
+ .button--blue {   /*бывш btn*/
+  text-align: center;
+  line-height: 40px; 
+  
+  padding: 0 30px; 
+  width: auto; 
+  height: 40px;
+  
+
+  background-color: #0070A0;
+  color: #FFFFFF;
+
+  transition: opacity 0.7s;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.button--blue{/*бывш btn*/
+  opacity: 0.8;
+}
+

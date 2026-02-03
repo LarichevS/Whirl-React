@@ -1,0 +1,145 @@
+.footer {
+  padding: 130px 0 0 0;
+}
+
+.footer--wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: creator nav;
+}
+
+.footer__creator--text {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  margin: 5px 0 0 0;
+}
+
+.footer__creator--link {
+  color: #0070A0;
+}
+
+.logo__footer {
+  padding: 0 0 15px 0;
+}
+
+.footer__list a {
+  color: #626A72;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.footer__list--heading {
+  display: block;
+  margin-bottom: 15px;
+  font-family: Inter;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+.footer__nav {
+  margin-left: 140px;
+}
+
+.footer__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__list--title {
+  padding-bottom: 64px;
+
+}
+
+.footer__list--item {
+  margin-bottom: 10px;
+}
+
+.footer__list--text {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding: 0 0 10px 0;
+}
+
+.footer__list--email {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #C2CDD8;
+  padding-bottom: 7px;
+}
+
+.footer__list--email .button--icon {
+  padding: 0;
+}
+
+.footer__input--email {
+  border: none;
+  padding: 0 15px;
+  outline: none;
+  flex: 1;
+  font-family: Inter;
+  font-size: 13px;
+  background: transparent;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__divider-img {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.footer__socials-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 37px;
+}
+
+.footer__socials--desc {
+  font-family: Inter;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.footer__socials--desc span {
+  color: #0070A0;
+}
+
+.footer__socials--icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__socials--img {
+  width: 22px;
+  height: 22px;
+}
+
+.btn{
+  font-family: Inter;
+  
+  letter-spacing: 0.2px;
+  
+
+  border: none; 
+  outline: none;   
+  cursor: pointer
+}
+
+ .button--icon {/* бывш button__learn */
+  color: #0070A0;
+  font-size: 17px;
+  display: flex;
+  gap:5px;
+  background-color: transparent;
+}

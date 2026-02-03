@@ -1,0 +1,74 @@
+.header {
+  padding: 25px 0;
+}
+
+.header--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.logo__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__list {
+  display: flex;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.header__menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 35px;
+
+}
+
+.btn{
+  font-family: Inter;
+  
+  letter-spacing: 0.2px;
+  
+
+  border: none; 
+  outline: none;   
+  cursor: pointer
+}
+
+ .button--blue {   /*бывш btn*/
+  text-align: center;
+  line-height: 40px; 
+  
+  padding: 0 30px; 
+  width: auto; 
+  height: 40px;
+  
+
+  background-color: #0070A0;
+  color: #FFFFFF;
+
+  transition: opacity 0.7s;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.button--blue{/*бывш btn*/
+  opacity: 0.8;
+}
+
+.button--transparent-opacity{ /*бывш button_reg*/
+  color: #0070A0;
+  font-size: 15px;
+  transition: opacity 0.5s;
+}
+
+.button--transparent-opacity:hover {/*бывш button_reg*/
+  opacity: 0.5;
+}
